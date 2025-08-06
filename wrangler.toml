@@ -1,4 +1,4 @@
-name = "premium-user-api"
+name = "premiumcloudflare"
 main = "src/index.js"
 compatibility_date = "2025-08-06"
 compatibility_flags = ["nodejs_compat"]
