@@ -1,19 +1,22 @@
-# Premium User Email Check API
+# Cloudflare Worker: Firebase + Turnstile Auth Proxy
 
-A Cloudflare Worker that checks whether an email exists in the **`premium_users`** collection of your MongoDB Atlas cluster and returns the full document (including the `expiry_date`).
+This Cloudflare Worker validates Cloudflare Turnstile CAPTCHA and authenticates users with Firebase's REST API.
 
-> ⚠️ **Security notice**  
-> The connection string is embedded directly in `src/index.js`. Do **not** deploy this code unmodified to any public repository or production account.
+## How to deploy
 
----
+1. Install Wrangler:  
+   `npm install -g wrangler`
 
-## Deploy in one click
+2. Login:  
+   `npx wrangler login`
 
-[![Deploy to Cloudflare Workers](https://deploy.cloudflare.com/button.svg)](https://deploy.cloudflare.com/?url=https://github.com/Mrblackgodd/Premiumcloudflare)
+3. Deploy:
+   `npx wrangler deploy`
 
-Fork this repository, replace `YOUR_GITHUB_USERNAME` in the link above with your user/org name, then press the button to deploy.
+4. Your endpoint will be at:  
+   `https://my-login-worker.<yourname>.workers.dev/`
 
----
+## Frontend Integration
 
-## Manual development
-
+- Set your frontend env variable:
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button?url=[https://github.com/Mrblackgodd/Premiumcloudflare](https://github.com/Mrblackgodd/Cloudflare-auth))](https://deploy.workers.cloudflare.com/?url=https://github.com/Mrblackgodd/Cloudflare-auth)
