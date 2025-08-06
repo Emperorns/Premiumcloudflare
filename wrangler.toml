@@ -1,9 +1,4 @@
-name               = "premium-user-api"
-main               = "src/index.js"
+name = "premium-user-api"
+main = "src/index.js"
 compatibility_date = "2025-08-06"
-
-# Enables Node-style `net`, `tls`, etc.
-node_compat = true
-
-# Optional: allow longer DB operations
-usage_model = "unbound"
+compatibility_flags = ["nodejs_compat"]
