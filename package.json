@@ -1,0 +1,16 @@
+{
+  "name": "premium-user-api",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev --inspect",
+    "deploy": "wrangler publish"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "mongodb": "^6.8.0"
+  }
+}
