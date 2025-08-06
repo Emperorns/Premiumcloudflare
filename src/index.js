@@ -4,7 +4,7 @@ import { MongoClient } from "mongodb";
 const MONGODB_URI =
   "mongodb+srv://nehal969797:nehalsingh969797@cluster0.b2r41qb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
-const DB_NAME         = "project5";        // <-- change if your DB name differs
+const DB_NAME         = "projectS";        // <-- change if your DB name differs
 const COLLECTION_NAME = "premium_users";   // should match your collection
 
 /* ---------- 2. Lazy, cached Mongo client ---------- */
